@@ -198,6 +198,7 @@ components:
       required:
         - code
         - message
+      description: Описание ошибки
       type: object
       properties:
         code:
