@@ -146,7 +146,7 @@ components:
         username:
           type: string
           description: Имя пользователя
-          maxLenght: 30
+          maxLenght: 20
         email:
           type: string
           description: Адрес электронной почты
@@ -162,11 +162,11 @@ components:
         city:
           type: string
           description: Город
-          maxLenght: 30
+          maxLenght: 50
         age:
           type: integer
           description: Возраст (полных лет)
-          maximum: 99
+          maximum: 120
       example:
         id: 123
         username: newUser
@@ -205,11 +205,11 @@ components:
         city:
           type: string
           description: Город
-          maxLenght: 30
+          maxLenght: 50
         age:
           type: integer
           description: Возраст
-          maximum: 99
+          maximum: 120
       example:
         username: newUser
         email: user@example.com
