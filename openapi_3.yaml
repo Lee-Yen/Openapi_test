@@ -222,14 +222,15 @@ components:
       required:
         - code
         - message
-      description: Описание ошибки
       type: object
       properties:
         code:
           type: integer
           format: int32
+          description: Код ошибки
         message:
           type: string
+          description: Описание ошибки
 
   responses:
     UserListSuccess:
@@ -270,21 +271,21 @@ components:
             $ref: '#/components/schemas/error'
 
     UserNotFound:
-      description: Пользователь не найден
+      description: Пользователь не найден. Проверьте Id пользователя
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/error'
 
     Unauthorized:
-      description: Неправильные имя или пароль пользователя
+      description: Неавторизованный пользователь. Используйте токен для авторизации
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/error'
 
     BadRequest:
-      description: Неправильный синтаксис запроса
+      description: Неверный запрос. Проверьте синтаксис запроса
       content:
         application/json:
           schema:
@@ -298,7 +299,7 @@ components:
             $ref: '#/components/schemas/error'
 
     UnprocessableEntity:
-      description: Серверу не удалось обработать запрос
+      description: Серверу не удалось обработать запрос. Попробуйте отправить запрос позже
       content:
         application/json:
           schema:
