@@ -222,14 +222,15 @@ components:
       required:
         - code
         - message
-      description: Описание ошибки
       type: object
       properties:
         code:
           type: integer
           format: int32
+          description: Код ошибки
         message:
           type: string
+          description: Описание ошибки
 
   responses:
     UserListSuccess:
