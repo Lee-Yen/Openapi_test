@@ -145,21 +145,33 @@ components:
           description: Уникальный идентификатор пользователя
         username:
           type: string
+          description: Имя пользователя
+          maxLenght: 30
         email:
           type: string
+          description: Адрес электронной почты
+          maxLenght: 30
         firstName:
           type: string
+          description: Имя 
+          maxLenght: 30
         lastName:
           type: string
+          description: Фамилия
+          maxLenght: 30
         city:
           type: string
+          description: Город
+          maxLenght: 30
         age:
           type: integer
+          description: Возраст (полных лет)
+          maximum: 99
       example:
         id: 123
         username: newUser
         email: user@example.com
-        firstName: Имя
+        firstName: Имя 
         lastName: Фамилия
         city: Город
         age: 30
@@ -176,16 +188,28 @@ components:
       properties:
         username:
           type: string
+          description: Имя пользователя
+          maxLenght: 30
         email:
           type: string
+          description: Адрес электронной почты
+          maxLenght: 30
         firstName:
           type: string
+          description: Имя 
+          maxLenght: 30
         lastName:
           type: string
+          description: Фамилия
+          maxLenght: 30
         city:
           type: string
+          description: Город
+          maxLenght: 30
         age:
           type: integer
+          description: Возраст
+          maximum: 99
       example:
         username: newUser
         email: user@example.com
